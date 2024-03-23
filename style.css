@@ -1,0 +1,237 @@
+@keyframes pisca{
+  0%{opacity:0.2;}
+  50%{opacity:0.8;}
+  100%{opacity:0.2;}
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*
+  FORMATAÇAO DA URNA
+*/
+
+
+.urna{
+  background-color: #dbd5c9;
+  padding: 30px;
+  display: flex;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+.tela{
+  background-image: linear-gradient(to right, #e8e8e8, #c1c1c1);
+  width: 500px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #555;
+  justify-content: space-between;
+}
+
+.teclado{
+  background-color: #403A3A;
+  margin-left: 30px;
+}
+
+.teclado-linha{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.teclado-botao{
+  background-color: black;
+  width: 70px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin: 10px;
+  box-shadow: 3px 3px 3px #555;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.teclado-linha-comando{
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.teclado-branco{
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #000;
+}
+
+.teclado-corrige{
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #f09046;
+  color: #000;
+}
+
+.teclado-confirma{
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #48c079;
+  color: #000;
+  width: 90px;
+  height: 50px;
+}
+
+.divisao-superior{
+  display: flex;
+}
+
+.divisao-superior-esquerda{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.divisao-superior-esquerda-1{
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.divisao-superior-esquerda-2{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divisao-superior-esquerda-numeros{
+  height: 50px;
+  font-size: 25px;
+}
+
+.numero{
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 40px;
+}
+
+.pisca{
+  animation-name: pisca;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.divisao-superior-esquerda-descricao{
+  line-height: 30px;
+}
+
+.divisao-superior-direita{
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.divisao-superior-direita-img{
+  width: 100%;
+  border: 1px solid black;
+}
+
+.divisao-superior-direita .small{
+  width: 70%;
+}
+
+label{
+  background-color: #fff;
+  padding: 2px;
+}
+
+.divisao-inferior {
+  height: 78px;
+  font-size: 15px;
+  border-top: 2px solid black;
+  padding-left: 10px;
+}
+
+.voto-grande{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.voto-gigante{
+  font-size: 80px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 117px;
+}
+
+
+
+
+
+
+/*FORMATAÇAO DOS CANDIDATOS*/
+
+.escolha-candidatos{
+  display: flex;
+  flex: 1;
+}
+
+.possiveis-candidatos{
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 30px 50px;
+  font-size: 17px;
+}
+
+h2{
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.formatacao-candidato {
+  margin-bottom: 25px;
+}
+
+li{
+  padding: 2px;
+}
+
+li:nth-child(even){
+  background-color: #fdfdfd;
+}
+
+li:nth-child(odd){
+  background-color: #dfdfdf; 
+}
+
+.observacao{
+  margin-bottom: 25px;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 19px;
+  background-color: #fdfdfd;
+}

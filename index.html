@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <section class="escolha-candidatos">
+    <div class="possiveis-candidatos">
+      <h2>VEREADORES</h2>
+      <ul class="formatacao-candidato">
+        <li>nome: Joao da Silva</li>
+        <li>numero: 16987</li>
+        <li>partido: ABC</li>
+      </ul>
+      <ul class="formatacao-candidato">
+        <li>nome: Pablo Mais Sal</li>
+        <li>numero: 13243</li>
+        <li>partido: MTR</li>
+      </ul>
+    </div>
+
+    <div class="possiveis-candidatos">
+      <h2>PREFEITOS</h2>
+      <ul class="formatacao-candidato">
+        <li>nome: Joao da Silva</li>
+        <li>numero: 84</li>
+        <li>nome: Maria do Bairro</li>
+      </ul>
+      <ul class="formatacao-candidato">
+        <li>nome: Marcelo do Povo</li>
+        <li>numero: 99</li>
+        <li>partido: PV</li>
+      </ul>
+    </div>
+  </section>
+
+  <p class="observacao">obs: caso preencha com números não referente a nenhum candidato, o voto sera nulo.</p>
+
+  <main class="urna">
+
+    <section class="tela">
+      <div class="divisao-superior">
+        <div class="divisao-superior-esquerda">
+          <div class="divisao-superior-esquerda-1">
+            <p>SEU VOTO PARA</p>
+          </div>
+          <div class="divisao-superior-esquerda-2">
+            <p>VEREADOR</p>
+          </div>
+          <div class="divisao-superior-esquerda-numeros">
+            <div class="numero pisca">
+            </div>
+            <div class="numero">
+            </div>
+          </div>
+          <div class="divisao-superior-esquerda-descricao">
+            NOME: FULANO <br>
+            PARTIDO: QQQ<br/>
+            VICE-PREFEITO: BELTRANO
+          </div>
+        </div>
+        <div class="divisao-superior-direita">
+          <img name="vereador1" class="divisao-superior-direita-img" src="img/13243.jpeg">
+          <label for="vereador1">PREFEITO</label>
+
+          <img name="vice-prefeito" class="divisao-superior-direita-img small" src="img/16987.jpeg">
+          <label for="vice-prefeito">VICE-PREFEITO</label>
+        </div>
+      </div>
+
+      <div class="divisao-inferior">
+        Aperte nos botões para:<br/>
+        CORRIGE para CORRIGIR<br/>
+        CONFIRMA para CONFIRMAR
+      </div>
+    </section>
+
+    <section class="teclado">
+      <div class="teclado-linha">
+        <div class="teclado-botao" onclick="clicou('1')">1</div>
+        <div class="teclado-botao" onclick="clicou('2')">2</div>
+        <div class="teclado-botao" onclick="clicou('3')">3</div>
+      </div>
+      <div class="teclado-linha">
+        <div class="teclado-botao" onclick="clicou('4')">4</div>
+        <div class="teclado-botao" onclick="clicou('5')">5</div>
+        <div class="teclado-botao" onclick="clicou('6')">6</div>
+      </div>
+      <div class="teclado-linha">
+        <div class="teclado-botao" onclick="clicou('7')">7</div>
+        <div class="teclado-botao" onclick="clicou('8')">8</div>
+        <div class="teclado-botao" onclick="clicou('9')">9</div>
+      </div>
+      <div class="teclado-linha">
+        <div class="teclado-botao" onclick="clicou('0')">0</div>
+      </div>
+
+      <div class="teclado-linha-comando">
+        <div class="teclado-botao teclado-branco" onclick="branco()">BRANCO</div>
+        <div  class="teclado-botao teclado-corrige" onclick="corrige()">CORRIGE</div>
+        <div  class="teclado-botao teclado-confirma" onclick="confirma()">CONFIRMA</div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+<script src="etapas.js"></script>
+<script src="script.js"></script>
+</html>
